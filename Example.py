@@ -13,3 +13,18 @@ print(son_anagramas("espada","pesada")) # True
 print(son_anagramas("hola", "cola")) # False
 print(son_anagramas("amor", "roma"))  # True
 print(son_anagramas("piedras","pietras")) #False
+print(son_anagramas('halo','hola')) #True
+
+
+def son_anagrama(palabra1, palabra2):
+    def contar_letras(palabra):
+        contador = {}
+        for letra in palabra.lower():
+            contador[letra] = contador.get(letra, 0) + 1
+        return contador
+
+    return contar_letras(palabra1) == contar_letras(palabra2)
+
+# Ejemplo de uso
+print(son_anagrama("amor", "roma"))  # True
+print(son_anagrama("hola", "halo"))  # False
