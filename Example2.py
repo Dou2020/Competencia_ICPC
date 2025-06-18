@@ -2,11 +2,11 @@
 # which could contain objects that are also array of objects,
 # into a single Array. your function must transform any given array input.
 # The input is an array and the output should be an array.
-#Input      Output
-#[1, 2, ["3", "4"]]    : [1, 2, "3", "4"]
-#[1, 2, [3, 4, [5, 6]]]    : [1, 2,3, 4, 5, 6]
-#[1, 2, ["a", "b", [5, 6]]]   : [1, 2, "a", "b", 5, 6]
-#[1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]  : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#       Input                                     Output
+#[1, 2, ["3", "4"]]                         : [1, 2, "3", "4"]
+#[1, 2, [3, 4, [5, 6]]]                     : [1, 2,3, 4, 5, 6]
+#[1, 2, ["a", "b", [5, 6]]]                 : [1, 2, "a", "b", 5, 6]
+#[1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]]    : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 def list_final(input_array):
